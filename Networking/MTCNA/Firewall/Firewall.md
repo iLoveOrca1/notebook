@@ -15,12 +15,18 @@ Firewall is a security system used to protect our network from incoming threat. 
 - Every filter rules are organized in a sequence of chain (berurutan dalam sebuah rantai).
 - Every chain will be read by the router from top to bottom.
 - The packet will be matched with a criteria inside a chain, if matched the packed will be executed. If not the packet will be matched with the rules inside the next chain untill it matched a criteria. 
-- There are 3 chain input, output, and forward.
+- There are 3 default chain input, output, and forward.
+- We could also make our own custom chains as we want. By default if there are no filter rules, all traffic that is coming from, pass, and out of the router will be allowed even if it was unsafe.
 
 
+## Firewall - Simple Packet Flow
 
+There are three bacis packet flow
+- Input - to the router
+- Forward - pass the router
+- Output - from the router 
 
-### Firewall Chains
+#### More About Default Chains
 1. input
 	This chains handle the packet that is going and addressed into the router itself. For example remote access requests to the router.
 
