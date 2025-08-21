@@ -2,8 +2,7 @@
 source: https://www.idn.id/tutorial-menggunakan-firewall-di-mikrotik/
 
 Firewall is a security system used to protect our network from incoming threat. Firewall is used to protect the network either coming from the WAN (Internet) or the LAN (Local). 
-
-![[firewall.jpg]]
+![The Firewall](firewall.png)
 
 ## Why Firewall
 - It is used to protect our network either from WAN(Internet) or LAN(Local).
@@ -21,8 +20,7 @@ Firewall is a security system used to protect our network from incoming threat. 
 
 
 ## Firewall - Simple Packet Flow
-
-![[packet-flow.jpg]]
+![packet-flow](packet-flow.png)
 
 There are three bacis packet flow
 - Input - to the router
@@ -41,6 +39,5 @@ There are three bacis packet flow
 
 ### Firewall - If condition
 • IF the packet meets the criteria we created.
-
-![[if.png]]
+![IF](if.png)
 
