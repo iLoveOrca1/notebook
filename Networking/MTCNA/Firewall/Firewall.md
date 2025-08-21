@@ -21,6 +21,7 @@ Firewall is a security system used to protect our network from incoming threat. 
 
 ## Firewall - Simple Packet Flow
 
+![[packet-flow.jpg]]
 There are three bacis packet flow
 - Input - to the router
 - Forward - pass the router
@@ -36,5 +37,7 @@ There are three bacis packet flow
 3. output 
 	This chain handle the packet that is originated from the router and going into another network. For example iptables and nftables.
 
-
+### Firewall - If condition
+• IF the packet meets the criteria we created.
+![[if.png]]
 
