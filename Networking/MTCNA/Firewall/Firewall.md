@@ -42,11 +42,13 @@ There are three bacis packet flow
 - IF the packet meets the criteria we created.
 - THEN what are the action that will be gaven to that package.
 - In firewall Filter, the IF statement was in the General, Advanced, and Extra menu wile THEN was in Action.
+
 ![IF](if.png)
 
 #### Firewall Filter - If(General)
 
 IP > Firewall Filter > General
+
 ![general-if](general-if.png)
 
 - Source address. 
