@@ -2,7 +2,7 @@
 source: https://www.idn.id/tutorial-menggunakan-firewall-di-mikrotik/
 
 Firewall is a security system used to protect our network from incoming threat. Firewall is used to protect the network either coming from the WAN (Internet) or the LAN (Local). 
-![The Firewall](firewall.png)
+![The Firewall](firewall.jpg)
 
 ## Why Firewall
 - It is used to protect our network either from WAN(Internet) or LAN(Local).
@@ -20,6 +20,7 @@ Firewall is a security system used to protect our network from incoming threat. 
 
 
 ## Firewall - Simple Packet Flow
+
 ![packet-flow](packet-flow.png)
 
 There are three bacis packet flow
@@ -37,7 +38,54 @@ There are three bacis packet flow
 3. output 
 	This chain handle the packet that is originated from the router and going into another network. For example iptables and nftables.
 
-### Firewall - If condition
-• IF the packet meets the criteria we created.
+## Firewall - If condition
+- IF the packet meets the criteria we created.
+- THEN what are the action that will be gaven to that package.
+- In firewall Filter, the IF statement was in the General, Advanced, and Extra menu wile THEN was in Action.
 ![IF](if.png)
+
+#### Firewall Filter - If(General)
+
+IP > Firewall Filter > General
+![general-if](general-if.png)
+
+- Source address. 
+- Destination address (alamat tujuan) the format could be a specific IP, specific network, or even every network (any). 
+- Protocol (TCP/UDP/ICMP, etc). 
+- Source Port (source port/from the client). 
+- Destination port.
+- Interface (traffic in or out).
+
+#### Firewall Filter - Then(Action)
+
+![then](then.png)
+
+- IP > Firewall Filter > Action
+- accept - packet will be accepted(allowed to execute)
+- drop - packet will be denied(dropped)
+- jump - packet will be jumped to the specified custom chain
+- log -  create a log for the specified packet
+- passthrough - packet will be executed and will be allowed to be filtered by the next rule(chain)
+- reject - the same as drop but also will return an ICMP reject packet
+- return - the packet will be returned where the action jump location will be made
+- tarpit - will open a shadow port inside the router. As if every port in the router is active but can never be accessed.
+
+- "add-dst-to address-list" - destination addrest will be added to the address-list.
+- "add-src-to address-list" - source address will be added to the address-list.
+- fasstrack connection - alternative feature for speedboost traffic data.
+
+### Frequently used port
+
+| Port/transmission | Service    |
+|-------------------|------------|
+| 80/tcp            | HTTP       |
+| 443/tcp           | HTTPS      |
+| 22/tcp            | ssh        |
+| 23/tcp            | telnet     |
+| 20,21/tcp         | ftp        |  
+| 8291/tcp          | WinBox     |
+| 5678/tcp          | MNDP       |
+| 20561/tcp         | Mac Winbox |
+
+
 
