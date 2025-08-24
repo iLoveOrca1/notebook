@@ -2,15 +2,15 @@
 source: https://www.idn.id/tutorial-menggunakan-firewall-di-mikrotik/
 
 Firewall is a security system used to protect our network from incoming threat. Firewall is used to protect the network either coming from the WAN (Internet) or the LAN (Local). 
-![The Firewall](firewall.jpg)
+![The Firewall](images/firewall.jpg)
 
-## Why Firewall
+# Why Firewall
 - It is used to protect our network either from WAN(Internet) or LAN(Local).
 - Protect the network that is going through the router.
 - Firewall feature in RouterOS are in IP > Firewall.
 - Basic firewall are in IP > Firewall > Filter Rules.
 
-## Firewall - Filter Rules
+# Firewall - Filter Rules
 - A really basic firewall rules in RouterOS
 - Every filter rules are organized in a sequence of chain (berurutan dalam sebuah rantai).
 - Every chain will be read by the router from top to bottom.
@@ -19,16 +19,16 @@ Firewall is a security system used to protect our network from incoming threat. 
 - We could also make our own custom chains as we want. By default if there are no filter rules, all traffic that is coming from, pass, and out of the router will be allowed even if it was unsafe.
 
 
-## Firewall - Simple Packet Flow
+# Firewall - Simple Packet Flow
 
-![packet-flow](packet-flow.png)
+![packet-flow](images/packet-flow.png)
 
 There are three bacis packet flow
 - Input - to the router
 - Forward - pass the router
 - Output - from the router 
 
-#### More About Default Chains
+### More About Default Chains
 1. input
 	This chains handle the packet that is going and addressed into the router itself. For example remote access requests to the router.
 
@@ -38,18 +38,18 @@ There are three bacis packet flow
 3. output 
 	This chain handle the packet that is originated from the router and going into another network. For example iptables and nftables.
 
-## Firewall - If condition
+# Firewall - If condition
 - IF the packet meets the criteria we created.
 - THEN what are the action that will be gaven to that package.
 - In firewall Filter, the IF statement was in the General, Advanced, and Extra menu wile THEN was in Action.
 
-![IF](if.png)
+![IF](images/if.png)
 
-#### Firewall Filter - If(General)
+### Firewall Filter - If(General)
 
 IP > Firewall Filter > General
 
-![general-if](general-if.png)
+![general-if](images/general-if.png)
 
 - Source address. 
 - Destination address (alamat tujuan) the format could be a specific IP, specific network, or even every network (any). 
@@ -58,9 +58,9 @@ IP > Firewall Filter > General
 - Destination port.
 - Interface (traffic in or out).
 
-#### Firewall Filter - Then(Action)
+### Firewall Filter - Then(Action)
 
-![then](then.png)
+![then](images/then.png)
 
 - IP > Firewall Filter > Action
 - accept - packet will be accepted(allowed to execute)
@@ -79,15 +79,29 @@ IP > Firewall Filter > General
 ### Frequently used port
 
 | Port/transmission | Service    |
-|-------------------|------------|
+| ----------------- | ---------- |
 | 80/tcp            | HTTP       |
 | 443/tcp           | HTTPS      |
 | 22/tcp            | ssh        |
 | 23/tcp            | telnet     |
-| 20,21/tcp         | ftp        |  
+| 20,21/tcp         | ftp        |
 | 8291/tcp          | WinBox     |
 | 5678/tcp          | MNDP       |
 | 20561/tcp         | Mac Winbox |
 
+# Firewall - Log
+- Log is a feature used to display an information / activity that is happening in the router
+- We can create or add any kind of activity log as we want through firewall filter with activity log
 
+### Making a log to track ping activity that is going to the router
+
+- Go to IP > Firewall > Filter Rules
+- Set the chain to input and protocol to icmp
+- Set the action to log and log prefix to incoming-ping
+- Try to ping the router and analyze the log
+
+# Firewall - Addres List
+- Firewall address list allow a user to create a list of IP addresses grouped together under a commmon name. This may not be as usefull in a small network but it comes really handy in a larger network like ISP.
+
+ 
 
