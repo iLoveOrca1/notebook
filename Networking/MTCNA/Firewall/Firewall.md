@@ -102,6 +102,32 @@ IP > Firewall Filter > General
 
 # Firewall - Addres List
 - Firewall address list allow a user to create a list of IP addresses grouped together under a commmon name. This may not be as usefull in a small network but it comes really handy in a larger network like ISP.
+- A line of address-list can be a form of subnet, ip range, or a specific IP.
+- Address list could be made automatically utilizing the "add-to-address list" action.
+- We could also set if the address-list could be made permanently or not using the timeout feature.
+
+# Firewall - Blocking Sites
+- You can also block any specific website to be accessed using Content and TLS Host parameter 
+- Content parameter will use a specific keyword inside that sites
+- TLS Host will use a domain name to define a sites. You can also use wildcard(`*`) with it like `*youtube.com`.
+
+# Firewall - NAT
+- NAT is a method used to connect multiple computer into the internet with just a single or more public ip address.
+- NAT works with the same principle as Filter Rule "IF-THEN".
+
+Mikrotik Has 2 Types of NAT:
+1. Srcnat, used when the client inside the router wants to go outside the internet.
+	- Masquerade: Used to connect a local network into the internet using a *dynamic* public ip.
+	- src-nat: Used to connect a local network into the internet using a *static* public ip.
+2. Dstnat, used when the client from the internet want to access the local address.
+	- dst-nat: used to access local network through the internet(port forwarding).
+	- redirect: used to redirect a traffic into a specific service inside the router itself, for example: 
+		- hotspot.
+		- webproxy.
+		- dns server.
+
+
+
 
  
 
