@@ -14,12 +14,19 @@
 | Wi-Fi 8   | 802.11be |       | 100.000          | 2.4 ,5, 6 |
 
 ---
-# wireless modes
-Function:
+
+## #2 - Wireless Mode
+There are two main Function of Wireless:
 - Access Point: Transmitter
 - Station: Receiver
 
-Please take a note that not all mode works on a bridge network since not all mode support L2 bridging especially as a receiver (station).
+Please take a note that not all mode works on a bridge network since not all mode support L2 bridging especially as a receiver (station). For wireless feature MikroTik router require minimum of level 3 license.
 
-1. **Alignment Only**
-	Usually used
+1. Access Point Mode
+	There are two main mode for access point mode, bridge and and ap-bridge:
+
+	- *bridge mode* can be connected with one client (point-to-point). With bridge mode you didn't have to worry about hacker interrupting and scanning the wireless devices. This mode is usually used on a point-to-point connection like wireless PTP from one router to another.
+
+	- *ap-bridge mode* can be connected with one or more client (point-to-multipoint). AP-Bridge mode usually used in topology like public wifi or an access point. Keep in mind to be able to use ap-bridge mode we need to have a minimum of level 4 license.
+
+2. Station Mode

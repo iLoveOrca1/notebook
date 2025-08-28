@@ -1,7 +1,7 @@
 # The Firewall
 source: https://www.idn.id/tutorial-menggunakan-firewall-di-mikrotik/
 
-Firewall is a security system used to protect our network from incoming threat. Firewall is used to protect the network either coming from the WAN (Internet) or the LAN (Local). 
+Firewall is a security system used to protect our network from incoming threat. Firewall is used to protect the network either coming from the WAN (Internet) or the LAN (Local).
 ![The Firewall](images/firewall.jpg)
 
 # Why Firewall
@@ -14,7 +14,7 @@ Firewall is a security system used to protect our network from incoming threat. 
 - A really basic firewall rules in RouterOS
 - Every filter rules are organized in a sequence of chain (berurutan dalam sebuah rantai).
 - Every chain will be read by the router from top to bottom.
-- The packet will be matched with a criteria inside a chain, if matched the packed will be executed. If not the packet will be matched with the rules inside the next chain untill it matched a criteria. 
+- The packet will be matched with a criteria inside a chain, if matched the packed will be executed. If not the packet will be matched with the rules inside the next chain untill it matched a criteria.
 - There are 3 default chain input, output, and forward.
 - We could also make our own custom chains as we want. By default if there are no filter rules, all traffic that is coming from, pass, and out of the router will be allowed even if it was unsafe.
 
@@ -26,7 +26,7 @@ Firewall is a security system used to protect our network from incoming threat. 
 There are three bacis packet flow
 - Input - to the router
 - Forward - pass the router
-- Output - from the router 
+- Output - from the router
 
 ### More About Default Chains
 1. input
@@ -35,7 +35,7 @@ There are three bacis packet flow
 2. forward
 	This chain handle the packet that is going through (pass) the router. For example ping from client pc into the internet.
 
-3. output 
+3. output
 	This chain handle the packet that is originated from the router and going into another network. For example iptables and nftables.
 
 # Firewall - If condition
@@ -51,10 +51,10 @@ IP > Firewall Filter > General
 
 ![general-if](images/general-if.png)
 
-- Source address. 
-- Destination address (alamat tujuan) the format could be a specific IP, specific network, or even every network (any). 
-- Protocol (TCP/UDP/ICMP, etc). 
-- Source Port (source port/from the client). 
+- Source address.
+- Destination address (alamat tujuan) the format could be a specific IP, specific network, or even every network (any).
+- Protocol (TCP/UDP/ICMP, etc).
+- Source Port (source port/from the client).
 - Destination port.
 - Interface (traffic in or out).
 
@@ -107,7 +107,7 @@ IP > Firewall Filter > General
 - We could also set if the address-list could be made permanently or not using the timeout feature.
 
 # Firewall - Blocking Sites
-- You can also block any specific website to be accessed using Content and TLS Host parameter 
+- You can also block any specific website to be accessed using Content and TLS Host parameter
 - Content parameter will use a specific keyword inside that sites
 - TLS Host will use a domain name to define a sites. You can also use wildcard(`*`) with it like `*youtube.com`.
 
@@ -121,13 +121,7 @@ Mikrotik Has 2 Types of NAT:
 	- src-nat: Used to connect a local network into the internet using a *static* public ip.
 2. Dstnat, used when the client from the internet want to access the local address.
 	- dst-nat: used to access local network through the internet(port forwarding).
-	- redirect: used to redirect a traffic into a specific service inside the router itself, for example: 
+	- redirect: used to redirect a traffic into a specific service inside the router itself, for example:
 		- hotspot.
 		- webproxy.
 		- dns server.
-
-
-
-
- 
-
