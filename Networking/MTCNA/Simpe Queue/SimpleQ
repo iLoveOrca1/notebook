@@ -1,0 +1,6 @@
+# Bandwith Management
+
+## Simple Queue
+Simple queue is a simple method to limit a bandwith in MikroTik RouterOS. Target to be limited could be a specific IP, specific Port, or even an entire network range.
+
+![Simple Q](images/simpleq.jpg)
