@@ -22,4 +22,4 @@ Function:
 Please take a note that not all mode works on a bridge network since not all mode support L2 bridging especially as a receiver (station).
 
 1. **Alignment Only**
-	Usually used 
+	Usually used

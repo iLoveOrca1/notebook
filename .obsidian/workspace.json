@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking/MTCNA/Firewall/Firewall.md",
+                "file": "Networking/MTCNA/Topics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Firewall"
+              "title": "Topics"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 292.5004348754883
+    "width": 236.50043487548828
   },
   "right": {
     "id": "6da307bdac27d871",
@@ -171,17 +171,23 @@
   },
   "active": "a27c161c24e97f38",
   "lastOpenFiles": [
-    "Networking/MTCNA/Firewall/firewall.jpg",
-    "Networking/MTCNA/Wireless/Wireless.md",
-    "Networking/MTCNA/Wireless/nstremedual.png",
     "Networking/MTCNA/Firewall/Firewall.md",
+    "Networking/MTCNA/Wireless/Wireless.md",
+    "Networking/MTCNA/Wireless/images/station-pseudobridge.png",
+    "Networking/MTCNA/Wireless/images/station.png",
+    "Networking/MTCNA/Wireless/images/station-bridge.png",
+    "Networking/MTCNA/Wireless/images/nstremedual.png",
+    "Networking/MTCNA/Wireless/images",
+    "Networking/MTCNA/Firewall/images/then.png",
+    "Networking/MTCNA/Firewall/images/packet-flow.png",
+    "Networking/MTCNA/Firewall/images/if.png",
+    "Networking/MTCNA/Firewall/images/general-if.png",
+    "Networking/MTCNA/Firewall/images/firewall.jpg",
+    "Networking/MTCNA/Firewall/images",
+    "Networking/MTCNA/Firewall/image/firewall.jpg",
+    "Networking/MTCNA/Firewall/image",
     "Networking/MTCNA/Topics.md",
     "Networking/MTCNA/Wireless.md",
-    "Networking/MTCNA/Wireless/station-pseudobridge.png",
-    "Networking/MTCNA/Wireless/station-bridge.png",
-    "Networking/MTCNA/Wireless/station.png",
-    "Networking/MTCNA/Wireless/Wireless-Rout.png",
-    "Networking/MTCNA/Wireless/nstreme_dual_save.png",
     "Networking/MTCNA/Wireless"
   ]
 }
