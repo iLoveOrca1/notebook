@@ -22,11 +22,12 @@ There are two main Function of Wireless:
 
 Please take a note that not all mode works on a bridge network since not all mode support L2 bridging especially as a receiver (station). For wireless feature MikroTik router require minimum of level 3 license.
 
-1. Access Point Mode
+**1. Access Point Mode**
 	There are two main mode for access point mode, bridge and and ap-bridge:
 
-	- *bridge mode* can be connected with one client (point-to-point). With bridge mode you didn't have to worry about hacker interrupting and scanning the wireless devices. This mode is usually used on a point-to-point connection like wireless PTP from one router to another.
+	- **bridge mode** can be connected with one client (point-to-point). With bridge mode you didn't have to worry about hacker interrupting and scanning the wireless devices. This mode is usually used on a point-to-point connection like wireless PTP from one router to another.
 
-	- *ap-bridge mode* can be connected with one or more client (point-to-multipoint). AP-Bridge mode usually used in topology like public wifi or an access point. Keep in mind to be able to use ap-bridge mode we need to have a minimum of level 4 license.
+	- **ap-bridge mode** can be connected with one or more client (point-to-multipoint). AP-Bridge mode usually used in topology like public wifi or an access point. Keep in mind to be able to use ap-bridge mode we need to have a minimum of level 4 license.
 
-2. Station Mode
+**2. Station Mode**
+	- **station mode** is used and act as a wireless client in a PTP(point to point) and PTMP(point to multipoint) topology. This wireless mode can only be used in a routing network and does not support bridging.
