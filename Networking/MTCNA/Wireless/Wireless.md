@@ -46,4 +46,5 @@ For every station mode, we could use every station mode with only level 3 licens
 
 	d. **station pseudobridge clone** doesn't differ a lot either from station pseudobridge. The difference is that with station pseudobridge clone we could set which mac address will be shared for bridging(station-bridge-cloned-mac) even tho it still will use only one mac address.
 
+tes
  	e. **station wds** for those who didnt know wds, wds are also called wireless distribution system
