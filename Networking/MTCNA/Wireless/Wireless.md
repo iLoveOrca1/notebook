@@ -36,9 +36,9 @@ b. **ap-bridge mode** can be connected with one or more client (point-to-multipo
 For every station mode, we could use every station mode with only level 3 license
 
 a.  **station mode** is used and act as a wireless client in a PTP(point to point) and PTMP(point to multipoint) topology. This wireless mode can only be used in a routing network(Layer 3 only) and does not support bridging. Keep in mind that client that are connected to this mode has to be on a different segment(different network). for example
-	- RAP(ap-bridge) - 172.16.8.1
-	- RAP(station) - 172.16.8.2
-	- Laptop Client(to station RAP) - 192.168.88.2
+- RAP(ap-bridge) - 172.16.8.1
+- RAP(station) - 172.16.8.2
+- Laptop Client(to station RAP) - 192.168.88.2
 
 b. **station bridge** different from the station, with station bridge we can use a same segment with the access point and will be used in the same layer 2 segment. Keep in mind this mode is only possible if both the client and the access point are using MikroTik devices. here are the example
 - RAP(ap-bridge) - 172.16.8.1
@@ -49,5 +49,10 @@ c. **station pseudobridge** doesn't differ a lot from station bridge mode. But, 
 
 d. **station pseudobridge clone** doesn't differ a lot either from station pseudobridge. The difference is that with station pseudobridge clone we could set which mac address will be shared for bridging(station-bridge-cloned-mac) even tho it still will use only one mac address.
 
-tes
-	e. **station wds** for those who didnt know wds, wds are also called wireless distribution system
+e. **wds slave** for those who didnt know wds, wds are also called wireless distribution system. It basically means that with one wireless interfaces it could act as a station for other access point and could also act as an access point for another client. But since it works both as a station and an access point it would decrease it throughput for almost 50%. For middle wds use wds slave mode.
+
+f. **station wds** just like explained in the previous mode, this mode is used to connect using wds protocol and used to receive data from wds slave.
+- normal access point (master)
+- wds slave (slave)
+- station wds (station)
+- Laptop (client)
