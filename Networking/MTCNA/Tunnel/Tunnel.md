@@ -20,5 +20,14 @@ VPN works in as a client-server so you only need one public IP to access the vpn
 
 # More About Tunnel in MikroTik
 
-### 1. PPTP
+**1. PPTP**
 This is an older type of protocol that utilize TCP control channel and GRE (General Routing Encapsulation) for tunneling. It is faster but less secure due to an outdated encryption (MS-CHAP v2). It's vulnerable to attacks such as Brute Force and MITM due to it outdated system.
+
+**2. L2TP**
+This tunneling protocol often paired with IpSec protocol for tunneling. It doesn't provide encryption but itself was more secure than PPTP with IpSec combined. It is commonly used in VPN remote access, it support multiple platform but can be slower due to the double encapsulation.
+
+**3. PPPoE***
+A protocol used for encapsulating PPP protocol over Ethernet networks. Often used in ISP to manage broadband connection and support multiple authentication and common in DSL and fibre optic connection.
+
+**4. EoIP**
+This is the most simple tunneling protocol in MikroTik. 
