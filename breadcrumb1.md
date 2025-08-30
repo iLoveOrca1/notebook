@@ -4,11 +4,6 @@ The breadcrumb method. The idea is to check the list every 5 minuts to give you 
 # Template - 10 minutes streak
 Check this mark every 10 minutes
 
-- [x] 10 minute
-- [x] 10 minute
-- [x] 10 minute
-- [x] 10 minute
-- [x] 10 minute
 - [ ] 10 minute
 - [ ] 10 minute
 - [ ] 10 minute
