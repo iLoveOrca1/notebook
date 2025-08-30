@@ -3,11 +3,12 @@ Tunnel is an encapsulation method for a data packet inside a network. Before bei
 
 # Tunnels in MikroTik
 There are many types of tunnel in MikroTIk:
-- PPTP
-- L2TP
-- PPPoE
-- EoIP
-- SSTP
+- PPTP (Point To Point Tunneling Protocol)
+- L2TP (Layer 2 Tunneling Protocol)
+- PPPoE (Point to Point Protocol over Ethernet)
+- EoIP (Ethernet over IP)
+- SSTP (Secure Socket Tunneling Protocol)
+
 We can see that in virtual interface that we can add them.
 
 # VPN in MikroTik
@@ -15,5 +16,4 @@ We can see that in virtual interface that we can add them.
 - Wiregurad
 
 # VPN vs Tunnels
-
 VPN works in as a client-server so you only need one public IP to access the vpn. Meanwhile Tunnel works like point-to-point. That means that you need two public IP to connect each router.
