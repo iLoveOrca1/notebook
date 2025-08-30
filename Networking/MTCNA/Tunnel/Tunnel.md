@@ -17,3 +17,5 @@ We can see that in virtual interface that we can add them.
 
 # VPN vs Tunnels
 VPN works in as a client-server so you only need one public IP to access the vpn. Meanwhile Tunnel works like point-to-point. That means that you need two public IP to connect each router.
+
+# More About Tunnel in MikroTik
