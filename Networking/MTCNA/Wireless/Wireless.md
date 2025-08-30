@@ -32,7 +32,6 @@ a. **bridge mode**
 b. **ap-bridge mode** can be connected with one or more client (point-to-multipoint). AP-Bridge mode usually used in topology like public wifi or an access point. Keep in mind to be able to use ap-bridge mode we need to have a minimum of level 4 license.
 
 ### 2. Station Mode
-
 For every station mode, we could use every station mode with only level 3 license
 
 a.  **station mode** is used and act as a wireless client in a PTP(point to point) and PTMP(point to multipoint) topology. This wireless mode can only be used in a routing network(Layer 3 only) and does not support bridging. Keep in mind that client that are connected to this mode has to be on a different segment(different network). for example
