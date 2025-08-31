@@ -137,11 +137,11 @@ Mikrotik Has 2 Types of NAT:
 Firewall Mangle is used to mark a specific packet, connection, or even routes. The mark made by firewall mangle can be applied to bandwit management like simple queue and routing. Firewall mangle is basically another way to organize and give you more control over the packet that is going through the router.
 
 ### Most used action in mangle
-1. Packet-Mark
+	1. Packet-Mark
  	Packet-mark usually used on a bandwith management scenario like simple Queue
 
-2. Routing-Mark
+	2. Routing-Mark
 	Routing-mark usually used for policy route(routing scenario).
 
-3. Connection-Mark
+	3. Connection-Mark
 	Connection-mark usually paired with other mark like Connection-Mark + Packet-Mark and Connection-Mark + Routing-Mark.
