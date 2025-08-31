@@ -38,6 +38,13 @@ There are three bacis packet flow
 3. output
 	This chain handle the packet that is originated from the router and going into another network. For example iptables and nftables.
 
+### Mangle Specific Chain
+1. Preroute
+	This chains handle packet that is going into and through the router. Basicaly input + forward.
+
+2. Postroute
+	This chains handle packet that is goint out and through the router. Basically output + forward.
+
 # Firewall - If condition
 - IF the packet meets the criteria we created.
 - THEN what are the action that will be gaven to that package.
@@ -125,3 +132,16 @@ Mikrotik Has 2 Types of NAT:
 		- hotspot.
 		- webproxy.
 		- dns server.
+
+# Firewall - Mangle
+Firewall Mangle is used to mark a specific packet, connection, or even routes. The mark made by firewall mangle can be applied to bandwit management like simple queue and routing. Firewall mangle is basically another way to organize and give you more control over the packet that is going through the router.
+
+### Most used action in mangle
+1. Packet-Mark
+ 	Packet-mark usually used on a bandwith management scenario like simple Queue
+
+2. Routing-Mark
+	Routing-mark usually used for policy route(routing scenario).
+
+3. Connection-Mark
+	Connection-mark usually paired with other mark like Connection-Mark + Packet-Mark and Connection-Mark + Routing-Mark.

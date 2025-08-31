@@ -34,4 +34,4 @@ A protocol used for encapsulating PPP protocol over Ethernet networks. Often use
 **4. EoIP**
 This is the most simple tunneling protocol in MikroTik. EoIP is a propietary protocol to build a bridge and tunnel with the other MikroTik router where EoIP interface will act like a normal ethernet interfaces. EoIP uses GRE protocol to build its tunnel. EoIP didn't use any encryption so it isn't recommended to be used as a transmission method that carry confidential data. EoIP uses tunnel ID to identify it's tunnel. MAC addresses between EoIP must differ.
 
-**5. 
+**5.
