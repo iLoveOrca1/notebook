@@ -40,10 +40,14 @@ There are three bacis packet flow
 
 ### Mangle Specific Chain
 1. Preroute
-	This chains handle packet that is going into and through the router. Basicaly input + forward.
+	This chains handle packet that is going into and through the router. Preroute isn't exactly input + forward, preroute happen when the packet going inside the router and before the routing determine wether the packet will go into the router or forward the router.
 
 2. Postroute
-	This chains handle packet that is goint out and through the router. Basically output + forward.
+	This chains handle packet that is goint out and through the router. Almost like preroute but in reverse. It handle packet before the routing determine wether the packet going out is from the router or is it being forwarded to other router.
+
+	- Packet going in -> Preroute -> input
+	- Packet goint in -> preroute -> forward -> postroute -> packet going out
+	- Packet from router -> postroute -> packet going out
 
 # Firewall - If condition
 - IF the packet meets the criteria we created.
@@ -74,7 +78,7 @@ IP > Firewall Filter > General
 - drop - packet will be denied(dropped)
 - jump - packet will be jumped to the specified custom chain
 - log -  create a log for the specified packet
-- passthrough - packet will be executed and will be allowed to be filtered by the next rule(chain)
+- passthrough - packet will be allowed to executed and will be continued to be filtered by the next rule(chain)
 - reject - the same as drop but also will return an ICMP reject packet
 - return - the packet will be returned where the action jump location will be made
 - tarpit - will open a shadow port inside the router. As if every port in the router is active but can never be accessed.
@@ -134,14 +138,19 @@ Mikrotik Has 2 Types of NAT:
 		- dns server.
 
 # Firewall - Mangle
+
 Firewall Mangle is used to mark a specific packet, connection, or even routes. The mark made by firewall mangle can be applied to bandwit management like simple queue and routing. Firewall mangle is basically another way to organize and give you more control over the packet that is going through the router.
 
-### Most used action in mangle
-	1. Packet-Mark
- 	Packet-mark usually used on a bandwith management scenario like simple Queue
+### Why use mangle?
 
-	2. Routing-Mark
+With firewall mangle
+
+### Most Used Action in Mangle
+1.  **Packet-Mark**
+	 Packet-mark usually used on a bandwith management scenario like simple Queue
+
+2. **Routing-Mark**
 	Routing-mark usually used for policy route(routing scenario).
 
-	3. Connection-Mark
+3. **Connection-Mark**
 	Connection-mark usually paired with other mark like Connection-Mark + Packet-Mark and Connection-Mark + Routing-Mark.
