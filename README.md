@@ -1,4 +1,3 @@
-# My Personal Obsidian Vault
+# MY OBSIDIAN VAULT 📖🖋️
 ---
-
-
+Hi! 👋👋👋 This is my

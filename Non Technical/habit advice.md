@@ -16,4 +16,4 @@ Don't just use technology the way it was meant to be. Hackers think like an expl
 
 Hackers are digital explorer.
 
-#3.
+#3. 
