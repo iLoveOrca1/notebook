@@ -5,13 +5,13 @@ I've been studying how to solve CTF by some weeks now. Basic CTF is ok, but when
 For example:
 
 - Cryptography: I studied steganography, the various base64, rot13, XOR, symmetryc and private key, substitution ciphers and transposition ciphers. I've saw some simple example of xortool but in pratice i really dont know what to do or search up
-    
+
 - Web: the basic ones it's ok. If it's something about login or crack the form with given php file it's ok. But i got a web ctf with a webpage with a 2D physic simulator. wtf. i dunno where to search. Also, thx for a tip, i know the existence of robots.txt. Before that how can i know that?
-    
+
 - Network: wireshark, 3 hand shaking ok ok, TPC, HTTP, ok ok, then when i go to make challenges, new protocols
-    
+
 - reverse engineering: ghidra, oh yes find the main, substitute random value name with better ones, understand the flows ok ok, but in challenges, the main is missing, each function are empty lmao
-    
+
 
 It's like you can have an entire course for each topic. But you guys, how do you improve yourself? I've read that reading writeups really helps, but other than that?
 

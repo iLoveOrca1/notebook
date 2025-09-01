@@ -1,5 +1,5 @@
 # **Hack The Box - Learning Process**
-Just my note on the Learning Process module in HackTheBox 
+Just my note on the Learning Process module in HackTheBox
 
 ## **Section 1. The Mindset**
 ### **_1.1. Way of Thinking._**
@@ -22,8 +22,8 @@ No one is born talented but continuing learning leads us to the place where we a
 
 ### **_2.1. Way of Learning.**
 
-``` 
-Q. 20 * ____ + _____ = 65535 
+```
+Q. 20 * ____ + _____ = 65535
 ```
 
 For the above-given equation multiple ways to solve it, so we should think outside the box. “Think Outside the Box”. We shouldn't limit our thoughts for a particular subject matter.
@@ -44,7 +44,7 @@ Finding the information we need is often challenging. First, we have to determin
 "What does it mean to be good?"
 ```
 
-To be good at something means we know **what we are doing.** 
+To be good at something means we know **what we are doing.**
 
 ### **_2.3. Learning Type_**
 
@@ -61,7 +61,7 @@ To be good at something means we know **what we are doing.**
 ### **_2.4. The Brain_**
 Here are a few **myths** about the brain:
 
-- We use only **5-10%** of our brainpower. 
+- We use only **5-10%** of our brainpower.
 - How **fast** we learn something says how **intelligent** we are.
 - **Einstein**, who we know was **terrible at math** and learned very **slowly** throughout his school career, unlike the others.
 
@@ -79,8 +79,8 @@ Unconscious Thoughts
 - We process **far more thoughts** subconsciously than consciously.
 - **Among other things**, the subconscious mind has **already made a decision 30 seconds** before we become **aware** of it.
 
-``` 
-Fun fact, most people do not even know that the brain regions responsible for the most difficult logical tasks do not develop until we're 20 (+/- 2) years old. 
+```
+Fun fact, most people do not even know that the brain regions responsible for the most difficult logical tasks do not develop until we're 20 (+/- 2) years old.
 ```
 
 ### **_2.5. The Will_**
@@ -105,7 +105,7 @@ If we answer "no" to these three questions, it should be clear that we are afrai
 
 ### **_2.6. The Goal_**
 
-Over 90 percent of people are significantly more successful in achieving their dreams by setting **challenging and specific goals.** We cannot emphasize strongly enough the importance of setting a clear goal for ourselves. Try to ask yourself: 
+Over 90 percent of people are significantly more successful in achieving their dreams by setting **challenging and specific goals.** We cannot emphasize strongly enough the importance of setting a clear goal for ourselves. Try to ask yourself:
 
 What do we want to achieve? Do we want to...:
 
@@ -197,7 +197,7 @@ There are many different management techniques and methods that we can use.These
 
 ### **_4.1. What Are Focus?_**
 
-It is essential to differentiate between **focus** and **attention** because they are not the same. 
+It is essential to differentiate between **focus** and **attention** because they are not the same.
 
 - **Attention** refers to **the momentum,** as it is happening right now, and you are reading this text.
 -  However, the **focus** is on the **topic** you are dealing with at the moment.
@@ -257,7 +257,7 @@ Another factor that reinforces this imaginary fear and makes us think we will fa
 The difference between a winner and a loser is that the winner has lost more often than the loser.
 ```
 
-=> Failure is essential to learning and unavoidable. No one has ever acquired a skill without making a single mistake. It is quite the opposite. 
+=> Failure is essential to learning and unavoidable. No one has ever acquired a skill without making a single mistake. It is quite the opposite.
 
 #### _Mindset_
 
@@ -304,4 +304,3 @@ We should remember the following:
 Especially in our field of cyber security and above all in penetration testing, we should keep the following in mind:
 
 - **The most important and most difficult thing in any situation is not the search for the right answer but the search for the right question.**
-
