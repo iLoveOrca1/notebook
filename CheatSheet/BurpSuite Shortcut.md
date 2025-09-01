@@ -14,7 +14,6 @@
 | Ctrl+f   | forward intercepted requests |
 | Ctrl+t   | toggle proxy intercept       |
 
-
 # HTTP History
 | Shortcut | Action           |
 |----------|------------------|
