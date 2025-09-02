@@ -55,3 +55,7 @@ f. **station wds** just like explained in the previous mode, this mode is used t
 - wds slave (slave)
 - station wds (station)
 - Laptop (client)
+
+# Wireless Security Profile
+
+![Wireless security](images/wireless-security.png)
