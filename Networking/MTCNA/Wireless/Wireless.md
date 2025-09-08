@@ -59,3 +59,8 @@ f. **station wds** just like explained in the previous mode, this mode is used t
 # Wireless Security Profile
 
 ![Wireless security](images/wireless-security.png)
+
+### 1. Static Key Encryption
+
+# Wireless Equivalent Privacy
+These are the first attemp and the weakest type of encryption for wireless. WEP encrypts traffic using a 64- or 128-bit key in hexadecimal. WEP encrypts traffic using a 64- or 128-bit key in hexadecimal. It relies on RC4 encryption.  

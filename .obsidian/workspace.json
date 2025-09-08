@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "102d11089440daa7",
+        "id": "163ccce79cd9d55e",
         "type": "tabs",
         "children": [
           {
-            "id": "75d33f40b99220b6",
+            "id": "52c7ac532fe4d3da",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Non Technical/The Cloud Meditation.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "The Cloud Meditation"
             }
           }
         ]
@@ -165,8 +169,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "75d33f40b99220b6",
+  "active": "52c7ac532fe4d3da",
   "lastOpenFiles": [
+    "Non Technical/The Cloud Meditation.md",
+    "Non Technical/Wisdom.md",
+    "Non Technical/How to get better at CTF.md",
+    "Non Technical/habit advice.md",
     "Networking/MTCNA/Firewall/Firewall.md",
     "Networking/MTCNA/Wireless/Wireless.md",
     "Networking/MTCNA/Tunnel/Tunnel.md",
