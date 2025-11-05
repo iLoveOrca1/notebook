@@ -5,11 +5,6 @@ curl -H 'Content-Type: application/json' -H 'Authorization: Bearer eyJhbGciOiJIU
     https://and-be.idcyberskills.com/api/v2/submit
 ```
 
-## Cred
-Name: Bali
-email: madegilang321@gmail.com
-pass: vdmqzLSgbp58YTVw
-
 ```
 <?php
 $books = [
