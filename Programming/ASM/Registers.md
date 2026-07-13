@@ -47,7 +47,6 @@ The prefix just means that the register can hold up to their respective size. In
 
 > Note: These are the actual order so its not abcd but acdb
 
----
 
 - **Accumulator register**
 	It is usually used to place the return value of a function but can be used for other purposes. Often used for **calculations** and storing **results.**
@@ -61,10 +60,7 @@ The prefix just means that the register can hold up to their respective size. In
 - **Base register**
 	Used as the base pointer for **memory access**. We subtract or add an offset to the value of this register to access variables. Can be used for anything, but often used for indexing or storing base addresses.
 
-
-
-
-# 🧭 Pointer Register
+# Pointer Register
 
 These registers are used to mark the end or start of a region of memory to allow a program keeping track of elements such as location of variables or the top of the stack, which are essential to manipulate data in memory.
 
